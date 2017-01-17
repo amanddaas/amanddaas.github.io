@@ -1,0 +1,11 @@
+.header, .footer {
+    height: 150px;
+    min-height: 140px;
+    max-height: 140px;
+}
+
+#main [class*='col-'] {
+    height: 600px;
+    min-height: 600px;
+    max-height: 600px;
+}
