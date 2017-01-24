@@ -1,0 +1,15 @@
+
+
+.header, .footer {
+    height: 75px;
+    min-height: 75px;
+    max-height: 75px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+
+body{
+  font-size: 36px;
+  font-weight: bold;
+}
