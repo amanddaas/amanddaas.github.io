@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Portfolio</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <style media="screen">
+  .header {
+      height: 65px;
+      min-height: 65px;
+      max-height: 65px;
+      font-size: 15px;
+      text-align: left;
+
+
+  }
+
+  .footer{
+    height: 75px;
+    margin-bottom: 0px;
+    margin-top: 20px;
+    text-align: center;
+  }
+.mainBody{
+  height: 350px;
+  min-height: 350px;
+  max-height: 350px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+    padding-left: 30px;
+
+
+
+}
+
+.lowerThird{
+  height: 120px;
+  min-height: 120px;
+  max-height: 120px;
+  margin-bottom: 20px;
+
+
+}
+
+.Nav{
+  height: 100px;
+  text-align: center;
+
+}
+
+      .pictures{
+          height: 300px;
+          margin-bottom: 0px;
+      }
+
+      .carone{
+          height: 180px;
+          margin-top: 40px;
+          margin-left: 20px;
+      }
+      .cartwo{
+          height: 180px;
+          margin-top: 40px;
+      }
+
+      .carthree{
+          height: 180px;
+          margin-top: 40px;
+      }
+  body{
+    font-size: 36px;
+    font-weight: bold;
+    font-size: 20px;
+
+  }
+  </style>
+
+</head>
+
+<body>
+<div class="container" >
+</div>
+
+<div class="row">
+
+<div class="col-md-12 randomColor Nav">
+<p>
+  Header
+</p>
+</div>
+
+</div>
+
+   <div class="row">
+     <div class="col-md-3 randomColor header">
+</div>
+
+       <div class="col-md-3 randomColor header">
+         <p>
+           Nav Bar
+         </p>
+
+       </div>
+
+       <div class="col-md-3 randomColor header">
+
+       </div>
+       <div class="col-md-3 randomColor header">
+
+       </div>
+
+
+   </div>
+
+<div class="row">
+    <div class="col-md-4 randomColor pictures">
+        <img class="carone" src="Images/Car.png">
+    </div>
+     <div class="col-md-4 randomColor pictures">
+         <img class="cartwo" src="Images/PNGPIX-COM-Blue-Honda-Accord-Hybrid-Car-PNG-Image.png">
+    </div>
+     <div class="col-md-4 randomColor pictures">
+         <img class="carthree" src="Images/mercedes_PNG1882.png">
+
+    </div>
+
+
+    </div>
+   <div class="row">
+     <div class="col-md-6 randomColor mainBody">
+         <p>
+             This Wireframe fixes the problems that were described in class because the header, footer, nav bar, and body are all aligned properly. Nothing is randomly placed onto the page and this wireframe allows for a more organized website and layout to ensure that contents on the website are layed out properly.
+         </p>
+
+     </div>
+     <div class="col-md-6 randomColor mainBody">
+       <p>
+         body
+       </p>
+
+     </div>
+
+   </div>
+
+     <div class="row">
+    <div class="col-md-12 randomColor footer">
+      <p>
+        footer
+      </p>
+    </div>
+
+</div>
+
+
+
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script>
+        function getRandomNumber(min, max) {
+            return Math.floor(Math.random() * max + min);
+        }
+        $(document).ready(function() {
+            var bodyColumns = $(".randomColor");
+            bodyColumns.each(function() {
+                $(this).css("background-color", "rgb(" + getRandomNumber(0, 255) + "," + getRandomNumber(0, 255) + "," + getRandomNumber(0, 255) + ")");
+            })
+            $("body").css("background-color", "rgb(" + getRandomNumber(0, 255) + "," + getRandomNumber(0, 255) + "," + getRandomNumber(0, 255) + ")");
+        })
+    </script>
+</body>
+
+</html>
