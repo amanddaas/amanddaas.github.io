@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Week 11</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.9/css/weather-icons.css">
+
+    <style media="screen">
+    /*background*/
+      .height1{
+        height: 75px;
+        min-height: 75px;
+        max-height: 75px;
+      }
+
+      .height2{
+        height: 800px;
+        min-height: 800px;
+        max-height: 800px;
+      }
+    </style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="row">
+  <div class="col-md-12 height1 randomColor">
+
+  </div>
+</div>
+
+
+</div>
+
+
+<div class="row">
+<div class="col-md-2 height2 randomColor">
+
+
+  
+</div>
+
+
+</div>    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      var url = "https://andersonguelphjs.github.io/class/week12/myJson.json";
+
+
+
+$.getJSON(url)
+.done(function(data){
+  console.log("success!");
+  console.dir(data);
+  for(var i=0;i<data.length;i++){
+    console.log("i "+1 +"name"+data[i].name);
+  }
+})
+
+.fail(function(data){
+  console.log("fail!");
+  console.dir(data);
+})
+
+
+    </script>
+    <script>
+
+
+    </script>
+</body>
+
+</html>
